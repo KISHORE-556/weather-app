@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Weather Website</title>
+    <style>
+      body {
+        background-color: skyblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+      }
+      label {
+        margin-bottom: 10px;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      button[type="submit"] {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/" method="post">
+      <h1>Get the Weather Forecast</h1>
+      <label for="location">Enter your location:</label>
+      <input type="text" id="location" name="city" required>
+      <button type="submit">Get Forecast</button>
+    </form>
+  </body>
+</html>
